@@ -1,10 +1,14 @@
 # Gemfire Docker Example
 
-## Build Docker Image
+## Build and Run Docker Image
 
 ```bash
-docker build .
+docker build . -t <YOUR_TAG>
+docker run -t <YOUR_TAG>
 ```
+
+## Explanation
+This will run a two node one locator geode cluster with a partitioned redundant region created.  You can then use gfsh to access it.
 
 ## References
 

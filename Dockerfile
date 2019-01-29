@@ -2,9 +2,9 @@
 FROM apachegeode/geode:1.2.1
 
 # Add only if you need to specify a proxy
-ARG PROXY
-ENV http_proxy ${PROXY}
-ENV https_proxy ${PROXY}
+# ARG PROXY
+# ENV http_proxy ${PROXY}
+# ENV https_proxy ${PROXY}
 
 # Install network and other tools need for linux image
 RUN env
